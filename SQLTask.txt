@@ -1,0 +1,7 @@
+
+--Предполагается, что в таблицах продуктов и категорий есть поля name и id
+
+select p.name, c.name
+from   products p 
+	   inner join categories c on c.product_id = p.id
+group by n.id, n.name
